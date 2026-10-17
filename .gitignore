@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Model outputs and local datasets (never commit patient-level files)
+backend/artifacts/*
+!backend/artifacts/.gitkeep
+backend/models/
+data/*
+!data/README.md
+!data/.gitkeep
+*.joblib
+*.pkl
+*.pickle
+*.xlsx
+*.xls
+*.csv
+
+# Node / Next.js
+node_modules/
+.next/
+frontend/.next/
+frontend/out/
+coverage/
+
+# Environment / local secrets
+.env
+.env.*
+!.env.example
+
+# OS / editor
+.DS_Store
+.vscode/
